@@ -1,0 +1,15 @@
+D:\Git\Homework\Seminar1_Homerwork\bin\Debug\net6.0\Seminar1_Homerwork.exe
+D:\Git\Homework\Seminar1_Homerwork\bin\Debug\net6.0\Seminar1_Homerwork.deps.json
+D:\Git\Homework\Seminar1_Homerwork\bin\Debug\net6.0\Seminar1_Homerwork.runtimeconfig.json
+D:\Git\Homework\Seminar1_Homerwork\bin\Debug\net6.0\Seminar1_Homerwork.dll
+D:\Git\Homework\Seminar1_Homerwork\bin\Debug\net6.0\Seminar1_Homerwork.pdb
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.csproj.AssemblyReference.cache
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.AssemblyInfoInputs.cache
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.AssemblyInfo.cs
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.csproj.CoreCompileInputs.cache
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.dll
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\refint\Seminar1_Homerwork.dll
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.pdb
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\Seminar1_Homerwork.genruntimeconfig.cache
+D:\Git\Homework\Seminar1_Homerwork\obj\Debug\net6.0\ref\Seminar1_Homerwork.dll
