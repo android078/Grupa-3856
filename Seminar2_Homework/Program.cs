@@ -47,3 +47,20 @@ else if (numA > 9999 && numA < 100000)
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+Console.WriteLine("Введите число недели: ");
+int dayofweek = Convert.ToInt32(Console.ReadLine());
+
+if (dayofweek > 0 && dayofweek < 6)
+{
+    Console.WriteLine(dayofweek + " рабочий день");
+}
+else if (dayofweek > 5 && dayofweek < 8)
+{
+    Console.WriteLine(dayofweek + " нерабочий день");
+}
+else if (dayofweek > 7)
+{
+    Console.WriteLine("Такого дня недели не существует");
+}
+
