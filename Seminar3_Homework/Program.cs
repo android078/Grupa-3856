@@ -44,3 +44,31 @@ int zB = int.Parse(Console.ReadLine());
 double result = Math.Sqrt((xB - xA) * (xB - xA) + (yB - yA) * (yB - yA) + (zB - zA) * (zB - zA));
 System.Console.WriteLine(result.ToString("c2"));
 
+
+// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+// 14212 -> нет
+
+// 12821 -> да
+
+// 23432 -> да
+
+System.Console.WriteLine("Введите пятизначное число: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+
+
+
+int lastNumber = numA % 10;
+int firstNumber = numA / 10000;
+int penultimateNumber = (numA / 10) % 10;
+int secondNumber = (numA / 1000) % 10;
+
+
+if ( firstNumber ==  lastNumber &&  secondNumber == penultimateNumber)
+{
+        System.Console.WriteLine(numA + " Заданное число является полиндромом");
+}
+else 
+{
+    System.Console.WriteLine(numA + " Заданное число не является полиндромом");
+}
