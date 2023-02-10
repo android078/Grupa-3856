@@ -30,6 +30,19 @@ Console.WriteLine(degree);
 
 // 9012 -> 12
 
+System.Console.WriteLine("Введите число: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+
+int summ = 0;
+
+while ( numA > 0 )
+{
+    int numB = numA % 10;
+    numA = numA / 10;
+    summ = summ + numB;
+
+}
+Console.WriteLine("Сумма всех чисел = " + summ);
 
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
