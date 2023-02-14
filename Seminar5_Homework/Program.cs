@@ -13,7 +13,7 @@ int count = 0;
 Random rand = new Random();
 
 
-for ( int i = 0; i < intArray.Length; i++)
+for ( int i = 0; i < intArray.Length; i+=2)
 
         if (intArray[i] % 2 == 0)
         count ++;
@@ -45,6 +45,40 @@ void ArrayRandomNumbers(int[] intArray)
 // [3, 7, 23, 12] -> 19
 
 // [-4, -6, 89, 6] -> 0
+
+Console.WriteLine("Задайте одномерный массив. Введите число : ");
+int size1 = Convert.ToInt32(Console.ReadLine());
+int[] intArr = new int[size1];
+ArrayRandomNumbers1(intArr);
+PrintArray1(intArr);
+int countArr = 0;
+
+
+
+
+for ( int i = 0; i < intArr.Length; i+=2)
+
+        countArr = countArr + intArr[i];
+
+ Console.WriteLine($"всего {intArr.Length} чисел, сумма чисел на нечётных позициях = {countArr}");
+
+void ArrayRandomNumbers1(int[] intArr)
+{
+        for(int j = 0; j < intArr.Length; j++)
+        {
+             intArr[j] = new Random().Next(1,20);
+        }
+    }
+    void PrintArray1(int[] intArr)
+    {
+    Console.Write("[ ");
+    for(int j = 0; j < intArr.Length; j++)
+    {
+        Console.Write(intArr[j] + " ");
+    }
+    Console.Write("]");
+    Console.WriteLine();
+}
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
