@@ -13,7 +13,7 @@ int count = 0;
 Random rand = new Random();
 
 
-for ( int i = 0; i < intArray.Length; i+=2)
+for ( int i = 0; i < intArray.Length; i++)
 
         if (intArray[i] % 2 == 0)
         count ++;
@@ -84,4 +84,48 @@ void ArrayRandomNumbers1(int[] intArr)
 
 // [3 7 22 2 78] -> 76
 
+Console.WriteLine("Введите размер массива : ");
+int size2 = Convert.ToInt32(Console.ReadLine());
+double[] numbers = new double[size2];
+ArrayRandomNumbers2(numbers);
+PrintArray2(numbers);
+
+
+Console.WriteLine("Массив: ");
+
+double min = Int32.MaxValue;
+double max = Int32.MinValue;
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > max)
+    {
+        max = numbers[i];
+    }
+    else if (numbers[i] < min)
+    {
+        min = numbers[i];
+    }
+}
+Console.WriteLine($"Всего имеется {numbers.Length} чисел. Из них минимальный  = {min}, а максимальный = {max}");
+Console.WriteLine($"Разница между максимальным и минимальным значением элементов массива = {max - min}");
+
+void ArrayRandomNumbers2(double[] numbers)
+{
+        for(int j = 0; j < numbers.Length; j++)
+        {
+             numbers[j] = (new Random().Next(100,1000)) / 100;
+        }
+    }
+void PrintArray2(double[] numbers)
+    {
+    Console.Write("[ ");
+    for(int j = 0; j < numbers.Length; j++)
+    {
+        Console.Write(numbers[j] + " ");
+    }
+    Console.Write("]");
+    Console.WriteLine();
+    }
+    
 
