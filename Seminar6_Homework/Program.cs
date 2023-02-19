@@ -18,6 +18,7 @@ var k2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите b2: ");
 var b2 = Convert.ToDouble(Console.ReadLine());
 
+
 var x = (b2-b1)/(k1-k2);
 var y = k1 * x + b1;
 
@@ -37,3 +38,23 @@ Console.WriteLine($"Прямые пересекаются в точке {x};{y} 
 // --> 0 1 1
 // Если N = 7
 // --> 0 1 1 2 3 5 8
+
+Console.WriteLine("До какого числа считать числа Фибоначчи?");
+int number = Convert.ToInt32(Console.ReadLine());
+int first = 0;
+Console.Write("{0}", first );
+int second = 1;
+Console.Write("{0}", second );
+int sum = 0;
+
+while (number >= sum)
+{
+    sum = first + second;
+    Console.Write("{0}", sum);
+    first = second;
+    second = sum;
+}
+
+
+
+
