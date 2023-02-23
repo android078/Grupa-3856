@@ -32,6 +32,49 @@ for (var i = 0; i < 4; i++)
 
 // 17 -> такого числа в массиве нет
 
+int a1 = ReadInt("Введите индекс строки: ");
+int b1 = ReadInt("Введите индекс столбца: ");
+int[,] numbers = new int[5, 5];
+AreaArray(numbers);
+PrintArray(numbers);
+
+if (a1 < numbers.GetLength(0) && b1 < numbers.GetLength(1)) 
+Console.WriteLine(numbers[a1, b1]);
+else Console.WriteLine($"{a1}{b1} -> такого числа в массиве нет");
+
+
+void AreaArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(1, 20);
+        }
+    }
+}
+
+void PrintArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+
+
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
 // Например, задан массив:
@@ -116,5 +159,47 @@ int d = 1;
 
 while (s < x*y)
 {
+    while (spiral [c, d+1] == 0)
+    {
+        spiral [c,d] = s;
+        s++;
+        d++;
+    }
+    while (spiral [c+1,d] == 0)
+    {
+        spiral [c,d] = s;
+        s++;
+        c++;
+    }
+    while (spiral [c, d-1] == 0)
+    {
+        spiral [c,d] = s;
+        s++;
+        d--;
+    }
+    while (spiral [c-1,d] == 0)
+    {
+        spiral [c-1,d] = s;
+        s++;
+        c--;
+    }
 
-}
+    }
+    for (int w = 0; w < x; w++)
+    {
+        for (int z = 0; z < y; z++)
+        {
+            if (spiral [w,z] < 8)
+            {
+                Console.WriteLine(spiral[w,z] + ",  ");
+            }
+            else 
+            {
+                Console.WriteLine(spiral[w,z] + ", ");
+            }
+        }
+        Console.WriteLine("");
+    }
+
+    // По последнюю задачу делал, но не до конца. Не хватило времени.
+    
